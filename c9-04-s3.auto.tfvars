@@ -2,7 +2,7 @@
 # https://registry.terraform.io/modules/terraform-aws-modules/s3-bucket/aws/latest
 
 s3_bucketname = "ugurustaoglu-test-bucket"
-s3_acls       = "private" # [private public-read public-read-write authenticated-read aws-exec-read log-delivery-write]
+s3_acls       = null # [private public-read public-read-write authenticated-read aws-exec-read log-delivery-write]
 
 s3_attach_policy                    = true # Controls if S3 bucket should have bucket policy attached
 s3_attach_deny_insecure_transport_policy   = true # Controls if S3 bucket should have deny non-SSL transport policy attached
